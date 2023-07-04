@@ -21,35 +21,24 @@
             <div class="topRightBtn">
                 {% if user.is_authenticated %}
                 <div class="signinUser">
-                    <h4 lass="username">
-                        {{user.username}}
-                    </h4>
-                    <a href="{% url 'logout' %}" class="logoutBtn">
                         Logout
-                    </a>
                 </div>
                 {% else %}
                 <div class="navPageBtnFirst tripButton">
                     Trip
                 </div>
                 {% if registerData %}
-                <a href="{% url 'signin' %}" class="signinBtn">
                     <div class="signinButton">
                         Sign In
                     </div>
-                </a>
                 {% elif signinData %}
-                <a href="{% url 'register' %}" class="signinBtn">
                     <div class="signinButton">
                         Sign Up
                     </div>
-                </a>
                 {% else %}
-                <a href="app/register" class="signinBtn">
                     <div class="signinButton">
                         Sign Up
                     </div>
-                </a>
                 {% endif %}
                 {% endif %}
             </div>
@@ -63,32 +52,24 @@
                         <h4 class="username">
                             {{user.username}}
                         </h4>
-                        <a href="{% url 'logout' %}" class="logoutBtn">
                             Logout
-                        </a>
                     </div>
                     {% else %}
                     <div class="tripButton">
                         Trip
                     </div>
                     {% if registerData %}
-                    <a href="{% url 'signin' %}" class="signinBtn">
                         <div class="signinButton">
                             Sign In
                         </div>
-                    </a>
                     {% elif signinData %}
-                    <a href="{% url 'register' %}" class="signinBtn">
                         <div class="signinButton">
                             Sign Up
                         </div>
-                    </a>
                     {% else %}
-                    <a href="app/register" class="signinBtn">
                         <div class="signinButton">
                             Sign Up
                         </div>
-                    </a>
                     {% endif %}
                     {% endif %}
                 </div>
