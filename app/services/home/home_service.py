@@ -15,13 +15,11 @@ class HomeService:
         image_path = home_object.home_main_image
 
         hero_image_path = set_image_path(path = image_path)
-        redirect_link = set_redirect_link('detail_layout')
 
         data = {
             'hero_image_path': hero_image_path,
             'popular_destination_object': popular_destination_object,
             'kathmandu_tour_object': kathmandu_tour_object,
-            'redirect_link': redirect_link,
         }
 
         return data
