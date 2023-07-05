@@ -2,6 +2,8 @@ from django.urls import path
 from app.views.hotel_detail_view import HotelDetailView
 
 from app.views.hotel_view import HotelView
+from app.views.things_to_do_detail_view import ThingsToDoDetailView
+from app.views.things_to_do_view import ThingsToDoView
 from .views.home_view import HomeView
 from .views.detail_view import DetailView
 
@@ -10,4 +12,6 @@ urlpatterns = [
     path('detail-layout', DetailView.as_view(), name='detail_layout'),
     path('hotel', HotelView.as_view(), name='hotel'),
     path('hotel_detail', HotelDetailView.as_view(), name='hotel_detail'),
+    path('things-to-do', ThingsToDoView.as_view(), name='things_to_do'),
+    path('things-to-do-detail', ThingsToDoDetailView.as_view(), name='things_to_do_detail'),
 ]
