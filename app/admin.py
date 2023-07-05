@@ -1,6 +1,10 @@
 from django.contrib import admin
 
 from app.models.hotel.component.hotel_detail_model import HotelDetailModel
+from app.models.things_to_do.component.culture_tour_model import CultureTourModel
+from app.models.things_to_do.component.food_tour_model import FoodTourModel
+from app.models.things_to_do.component.treak_model import TreakModel
+from app.models.things_to_do.things_to_do_model import ThingsToDoModel
 from .models.home.home_model import HomeModel
 from .models.home.component.kathmandu_tour_model import KathmanduTourModel
 from .models.home.component.popular_destination_model import PopularDestinationModel
@@ -24,4 +28,8 @@ admin.site.register([
     HotelServiceModel,
     UserReviewModel,
     HotelDetailModel,
+    ThingsToDoModel,
+    CultureTourModel,
+    FoodTourModel,
+    TreakModel,
 ])
