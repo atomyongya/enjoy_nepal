@@ -5,6 +5,8 @@ from app.models.things_to_do.component.culture_tour_model import CultureTourMode
 from app.models.things_to_do.component.food_tour_model import FoodTourModel
 from app.models.things_to_do.component.treak_model import TreakModel
 from app.models.things_to_do.things_to_do_model import ThingsToDoModel
+from app.models.vacation_rentals.component.vacation_rentals_detail_model import VacationRentalsDetailModel
+from app.models.vacation_rentals.vacation_rentals_model import VacationRentalsModel
 from .models.home.home_model import HomeModel
 from .models.home.component.kathmandu_tour_model import KathmanduTourModel
 from .models.home.component.popular_destination_model import PopularDestinationModel
@@ -32,4 +34,6 @@ admin.site.register([
     CultureTourModel,
     FoodTourModel,
     TreakModel,
+    VacationRentalsModel,
+    VacationRentalsDetailModel,
 ])
