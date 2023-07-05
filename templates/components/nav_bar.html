@@ -21,24 +21,24 @@
             <div class="topRightBtn">
                 {% if user.is_authenticated %}
                 <div class="signinUser">
-                        Logout
+                    Logout
                 </div>
                 {% else %}
                 <div class="navPageBtnFirst tripButton">
                     Trip
                 </div>
                 {% if registerData %}
-                    <div class="signinButton">
-                        Sign In
-                    </div>
+                <div class="signinButton">
+                    Sign In
+                </div>
                 {% elif signinData %}
-                    <div class="signinButton">
-                        Sign Up
-                    </div>
+                <div class="signinButton">
+                    Sign Up
+                </div>
                 {% else %}
-                    <div class="signinButton">
-                        Sign Up
-                    </div>
+                <div class="signinButton">
+                    Sign Up
+                </div>
                 {% endif %}
                 {% endif %}
             </div>
@@ -52,24 +52,24 @@
                         <h4 class="username">
                             {{user.username}}
                         </h4>
-                            Logout
+                        Logout
                     </div>
                     {% else %}
                     <div class="tripButton">
                         Trip
                     </div>
                     {% if registerData %}
-                        <div class="signinButton">
-                            Sign In
-                        </div>
+                    <div class="signinButton">
+                        Sign In
+                    </div>
                     {% elif signinData %}
-                        <div class="signinButton">
-                            Sign Up
-                        </div>
+                    <div class="signinButton">
+                        Sign Up
+                    </div>
                     {% else %}
-                        <div class="signinButton">
-                            Sign Up
-                        </div>
+                    <div class="signinButton">
+                        Sign Up
+                    </div>
                     {% endif %}
                     {% endif %}
                 </div>
@@ -77,6 +77,9 @@
                     <Nav class="navBar">
                         <li>
                             <a href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'hotel' %}">Hotel</a>
                         </li>
 
                     </Nav>
