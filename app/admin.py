@@ -1,6 +1,8 @@
 from django.contrib import admin
 
 from app.models.hotel.component.hotel_detail_model import HotelDetailModel
+from app.models.review.component.website_review_model import WebsiteReviewModel
+from app.models.review.review_model import ReviewModel
 from app.models.things_to_do.component.culture_tour_model import CultureTourModel
 from app.models.things_to_do.component.food_tour_model import FoodTourModel
 from app.models.things_to_do.component.treak_model import TreakModel
@@ -36,4 +38,6 @@ admin.site.register([
     TreakModel,
     VacationRentalsModel,
     VacationRentalsDetailModel,
+    ReviewModel,
+    WebsiteReviewModel,
 ])

@@ -2,6 +2,7 @@ from django.urls import path
 from app.views.hotel_detail_view import HotelDetailView
 
 from app.views.hotel_view import HotelView
+from app.views.review_view import ReviewView
 from app.views.things_to_do_detail_view import ThingsToDoDetailView
 from app.views.things_to_do_view import ThingsToDoView
 from app.views.vacation_rentals_detail_view import VacationRentalsDetailView
@@ -18,4 +19,5 @@ urlpatterns = [
     path('things-to-do-detail', ThingsToDoDetailView.as_view(), name='things_to_do_detail'),
     path('vacation-rentals', VacationRentalsView.as_view(), name='vacation_rentals'),
     path('vacation-rentals-detail', VacationRentalsDetailView.as_view(), name='vacation_rentals_detail'),
+    path('review', ReviewView.as_view(), name='review'),
 ]
