@@ -20,26 +20,20 @@
             </button>
             <div class="topRightBtn">
                 {% if user.is_authenticated %}
-                <div class="signinUser">
-                    Logout
-                </div>
+                <a href="{% url 'logout' %}" class="logoutBtn">
+                    <div class="signinUser">
+                        Logout
+                    </div>
+                </a>
                 {% else %}
                 <div class="navPageBtnFirst tripButton">
                     Trip
                 </div>
-                {% if registerData %}
-                <div class="signinButton">
-                    Sign In
-                </div>
-                {% elif signinData %}
-                <div class="signinButton">
-                    Sign Up
-                </div>
-                {% else %}
-                <div class="signinButton">
-                    Sign Up
-                </div>
-                {% endif %}
+                <a href="{% url 'sign_in' %}" class="signInLink">
+                    <div class="signinButton">
+                        Sign In
+                    </div>
+                </a>
                 {% endif %}
             </div>
         </div>
@@ -58,19 +52,11 @@
                     <div class="tripButton">
                         Trip
                     </div>
-                    {% if registerData %}
-                    <div class="signinButton">
-                        Sign In
-                    </div>
-                    {% elif signinData %}
-                    <div class="signinButton">
-                        Sign Up
-                    </div>
-                    {% else %}
-                    <div class="signinButton">
-                        Sign Up
-                    </div>
-                    {% endif %}
+                    <a href="{% url 'sign_in' %}" class="signInLink">
+                        <div class="signinButton">
+                            Sign In
+                        </div>
+                    </a>
                     {% endif %}
                 </div>
                 <div class="bottomNavBar">

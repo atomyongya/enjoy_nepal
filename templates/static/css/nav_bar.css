@@ -23,12 +23,6 @@
     color: black;
 }
 
-.signinBtn {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
 .menuBtn {
     padding: 0;
     border: none;
@@ -53,6 +47,11 @@
 
 .signinButton {
     margin-top: 1rem;
+}
+
+.signInLink{
+    text-decoration: none;
+    color: white;
 }
 
 .navBar {

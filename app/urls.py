@@ -9,6 +9,7 @@ from app.views.vacation_rentals_detail_view import VacationRentalsDetailView
 from app.views.vacation_rentals_view import VacationRentalsView
 from .views.home_view import HomeView
 from .views.detail_view import DetailView
+from authentication.views.sign_in_view import logout
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
@@ -20,4 +21,5 @@ urlpatterns = [
     path('vacation-rentals', VacationRentalsView.as_view(), name='vacation_rentals'),
     path('vacation-rentals-detail', VacationRentalsDetailView.as_view(), name='vacation_rentals_detail'),
     path('review', ReviewView.as_view(), name='review'),
+    path('logout', logout, name='logout'),
 ]
