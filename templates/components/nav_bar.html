@@ -20,11 +20,17 @@
             </button>
             <div class="topRightBtn">
                 {% if user.is_authenticated %}
-                <a href="{% url 'logout' %}" class="logoutBtn">
-                    <div class="signinUser">
-                        Logout
-                    </div>
-                </a>
+                <div class="signinUser">
+
+                    <h4 class="username">
+                        {{user.username}}
+                    </h4>
+                    <a href="{% url 'logout' %}" class="logoutBtn">
+                        <div class="signinUser">
+                            Logout
+                        </div>
+                    </a>
+                </div>
                 {% else %}
                 <div class="navPageBtnFirst tripButton">
                     Trip

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    {% load socialaccount %}
     <header>
         <a href="{% url 'home' %}">
             <img src="/static/images/logo.svg" alt="Logo ALLTRAILS" class="logoImage" height="20">
@@ -33,7 +34,7 @@
             </div>
             <div class="googleOauthButton">
                 <p>Sign In with</p>
-                <button class="googleSignInBtn">Google Sign In</button>
+                <a href="{% provider_login_url 'google' %}?next=/" class="googleSignInBtn">Google Sign In</a>
             </div>
         </div>
     </div>

@@ -13,8 +13,6 @@ class VacationRentalsView(View):
             vacation_rental_object = vacation_rental_object,
         )
 
-        print('****************')
-
         return render(
             request,
             'vacation_rentals/vacation_rentals.html',
