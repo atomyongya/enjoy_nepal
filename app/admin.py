@@ -1,4 +1,6 @@
 from django.contrib import admin
+from app.models.booking.booking_model import BookingModel
+from app.models.booking.component.booking_conformation_model import BookingConformationModel
 
 from app.models.hotel.component.hotel_detail_model import HotelDetailModel
 from app.models.review.component.website_review_model import WebsiteReviewModel
@@ -40,4 +42,6 @@ admin.site.register([
     VacationRentalsDetailModel,
     ReviewModel,
     WebsiteReviewModel,
+    BookingModel,
+    BookingConformationModel,
 ])

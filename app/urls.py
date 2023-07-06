@@ -1,4 +1,7 @@
 from django.urls import path
+from app.models.booking.component.booking_conformation_model import BookingConformationModel
+from app.views.booking_conformation_view import BookingConformationView
+from app.views.booking_view import BookingView
 from app.views.hotel_detail_view import HotelDetailView
 
 from app.views.hotel_view import HotelView
@@ -21,5 +24,7 @@ urlpatterns = [
     path('vacation-rentals', VacationRentalsView.as_view(), name='vacation_rentals'),
     path('vacation-rentals-detail', VacationRentalsDetailView.as_view(), name='vacation_rentals_detail'),
     path('review', ReviewView.as_view(), name='review'),
+    path('booking', BookingView.as_view(), name='booking'),
+    path('booking-conformation', BookingConformationView.as_view(), name='booking_conformation'),
     path('logout', logout, name='logout'),
 ]
