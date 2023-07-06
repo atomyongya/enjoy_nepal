@@ -12,7 +12,6 @@ class HomeView(View):
         popular_destination_object = PopularDestinationModel.objects.all()
 
         home_service_object = HomeService()
-        print(kathmandu_tour_object)
 
         data = home_service_object.getData(
             home_object = home_object,
