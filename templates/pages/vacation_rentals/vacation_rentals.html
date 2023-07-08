@@ -22,13 +22,12 @@
                     <p>{{vacation.number_of_bed_room}}</p>
                     <p>{{vacation.numberOfBatnumber_of_bath_roomhRoom}}</p>
                 </div>
-                <button class="showPriceBtn">
-                    Show Price
-                </button>
+                <a href="{% url 'booking' %}?booking={{vacation.name}}" class="showPriceBtn btn">Book
+                    Now</a>
             </div>
         </div>
         {% endfor %}
-    {% include "footer.html" %}
+        {% include "footer.html" %}
 </body>
 
 </html>

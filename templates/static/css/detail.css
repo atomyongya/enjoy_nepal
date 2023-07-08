@@ -94,6 +94,20 @@
     white-space: pre-line;
 }
 
+.btn {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    background-color: white;
+    margin-top: 1rem;
+    color: #22577A;
+    border-color: white;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
 @media (width > 48rem) and (width < 75rem) {
     .detailLayoutContainer {
         padding: 0px;
