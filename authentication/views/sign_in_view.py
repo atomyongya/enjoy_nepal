@@ -2,8 +2,6 @@ from rest_framework.views import View
 from django.shortcuts import render, redirect
 from django.contrib import auth, messages
 
-from authentication.services.sign_in_service import SignInService
-
 class SignInView(View):
     def get(self, request):
         return render(
