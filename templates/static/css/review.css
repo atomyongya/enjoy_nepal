@@ -1,0 +1,71 @@
+.aboutUsImage {
+    display: none;
+}
+
+.userImage {
+    width: 100%;
+}
+
+.userInfoContainer {
+    background-color: #22577A;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.userInfo {
+    padding: 1rem;
+}
+
+.userName {
+    color: #B4D330;
+}
+
+.userReview {
+    color: white;
+}
+
+@media (width > 48rem) and (width < 75rem) {
+    .aboutUsImage {
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .userInfoContainer {
+        display: flex;
+        background-color: white;
+    }
+
+    .userImage {
+        width: 20%;
+        margin-right: 1rem;
+    }
+
+    .userInfo {
+        background-color: #22577A;
+    }
+}
+
+@media (width >=75rem) {
+    .aboutUsImage {
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .userInfoContainer {
+        display: flex;
+        background-color: white;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    .userImage {
+        width: 20%;
+        margin-right: 1rem;
+    }
+
+    .userInfo {
+        background-color: #22577A;
+    }
+}

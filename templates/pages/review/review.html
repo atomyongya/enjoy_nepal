@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/review.css">
     <title>{{title}}</title>
 </head>
 <body>
-    {{title}}
+    {% include "nav_bar.html" %}
+    <div class="aboutUs">
+        <img src="/media/{{image}}" alt="" class="aboutUsImage">
+        {% for user in aboutUsData.0.aboutUsList.all %}
+        <div class="userInfoContainer">
+            <img src="/media/{{user.userImage}}" alt="" class="userImage">
+            <div class="userInfo">
+                <p class="userName">
+                    {{user.userName}}
+                </p>
+                <p class="userReview">
+                    {{user.aboutUsSentence  }}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% include "footer.html" %}
 </body>
 </html>
