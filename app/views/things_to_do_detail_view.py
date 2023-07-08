@@ -21,12 +21,12 @@ class ThingsToDoDetailView(View):
                 things_to_do_detail_object=things_to_do_detail_object,
             )
         if food_tour_id != None:
-            things_to_do_detail_object = FoodTourModel.objects.get(id=culture_tour_id)
+            things_to_do_detail_object = FoodTourModel.objects.get(id=food_tour_id)
             data = things_to_do_service.getData(
                 things_to_do_detail_object=things_to_do_detail_object,
             )
         if treak_id != None:
-            things_to_do_detail_object = TreakModel.objects.get(id=culture_tour_id)
+            things_to_do_detail_object = TreakModel.objects.get(id=treak_id)
             data = things_to_do_service.getData(
                 things_to_do_detail_object=things_to_do_detail_object,
             )

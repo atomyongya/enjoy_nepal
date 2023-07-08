@@ -8,10 +8,12 @@ class ReviewService:
     ):
         title = review_object.title
         image = review_object.image
+        review = review_object.website_review_detail
 
         data = {
             'title': title,
             'image': image,
+            'review': review,
         }
 
         return data

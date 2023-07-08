@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/static/css/nav_bar.css">
+    <link rel="stylesheet" type="text/css" href="static/css/nav_bar.css">
     <title>Document</title>
 </head>
 
@@ -26,9 +26,7 @@
                         {{user.username}}
                     </h4>
                     <a href="{% url 'logout' %}" class="logoutBtn">
-                        <div class="signinUser">
-                            Logout
-                        </div>
+                        Logout
                     </a>
                 </div>
                 {% else %}
@@ -65,28 +63,30 @@
                     </a>
                     {% endif %}
                 </div>
-                <div class="bottomNavBar">
-                    <Nav class="navBar">
-                        <li>
-                            <a href="{% url 'home' %}">Home</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'hotel' %}">Hotel</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'things_to_do' %}">Things to do</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'vacation_rentals' %}">Vacation Rentals</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'review' %}">About Us</a>
-                        </li>
-                    </Nav>
-                </div>
+            </div>
+
+            <div class="bottomNavBar">
+                <Nav class="navBar">
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'hotel' %}">Hotel</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'things_to_do' %}">Things to do</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'vacation_rentals' %}">Vacation Rentals</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'review' %}">About Us</a>
+                    </li>
+                </Nav>
             </div>
         </div>
-        <script src="/static/js/nav.js"></script>
+    </div>
+    <script src="/static/js/nav.js"></script>
     </div>
 </body>
 

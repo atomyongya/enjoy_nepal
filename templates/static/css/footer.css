@@ -1,10 +1,11 @@
-.footer {
+footer {
     width: 100%;
     align-items: center;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: 1px solid gray;
+    background-color: white;
 }
 
 .socialNetwork {
@@ -14,11 +15,18 @@
     justify-content: space-evenly;
 }
 
-@media (width > 48rem) and (width < 75rem) {}
+@media (width > 48rem) and (width < 75rem) {
+    footer{
+        position: sticky;
+        bottom: 0px;
+    }
+}
 
 @media (width > 75rem) {
-    .footer {
+    footer {
         width: 100%;
+        position: fixed;
+        bottom: 0px;
         display: flex;
         align-items: center;
         justify-content: space-between;
