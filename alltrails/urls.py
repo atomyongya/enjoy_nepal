@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('app.urls')),
     path('', include('authentication.urls')),
     path('accounts/', include('allauth.urls')),
+    path('khalti/', include('khalti.urls')),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
