@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'khalti',
 ]
 
 SOCIALACCOUNT_PROVIDERS = {
@@ -58,11 +59,6 @@ SOCIALACCOUNT_PROVIDERS = {
             'email',
         ],
         'AUTH_PARAMS': {'access_type': 'online'},
-        'APP': {
-            'client_id': '554447441817-6e409p3smuqmk2v71rp04htpd6p0i0pk.apps.googleusercontent.com',
-            'secret': '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',
-            'key': ''
-        }
     }
 }
 
@@ -164,3 +160,6 @@ AUTHENTICATION_BACKENDS = (
 LOGIN_DIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 SOCIALACCOUNT_LOGIN_ON_GET=True
+
+KHALTI_SECRET_KEY = ""
+KHALTI_VERIFY_URL = "https://khalti.com/api/v2/payment/verify/"
