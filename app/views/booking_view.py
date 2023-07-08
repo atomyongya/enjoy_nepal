@@ -7,7 +7,6 @@ from app.services.booking.booking_service import BookingService
 class BookingView(View):
     def get(self, request):
         booking_type = request.GET.get('booking')
-        print(booking_type)
         user = request.user
 
         if not user.is_authenticated:
@@ -30,7 +29,6 @@ class BookingView(View):
         is_booking_successful, booking_message = booking_service.save_user_booking_detail(
             request=request,
         )
-
 
         if is_booking_successful:
             return redirect('booking_conformation')

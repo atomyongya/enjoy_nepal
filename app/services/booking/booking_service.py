@@ -18,11 +18,6 @@ class BookingService:
             return False, 'Invalid User'
 
         if  phone_number == None or start_day is None or payment_type == '' or number_of_people is None:
-            print(phone_number)
-            print(start_day)
-            print(payment_type)
-            print(number_of_people)
-            print(booking_type)
             return False, 'Please fill all the field'
 
         booking = BookingModel(
