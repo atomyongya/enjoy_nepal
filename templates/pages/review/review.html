@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/review.css">
     <title>{{title}}</title>
 </head>
+
 <body>
     {% include "nav_bar.html" %}
     <div class="aboutUs">
         <img src="/media/{{image}}" alt="" class="aboutUsImage">
-        {% for user in aboutUsData.0.aboutUsList.all %}
+        <h1>User review</h1>
+        {% for review in reviews %}
         <div class="userInfoContainer">
-            <img src="/media/{{user.userImage}}" alt="" class="userImage">
             <div class="userInfo">
-                <p class="userName">
-                    {{user.userName}}
-                </p>
-                <p class="userReview">
-                    {{user.aboutUsSentence  }}
+                <h2>
+                    {{review.user_name}}
+                </h2>
+                <p>
+                    {{review.webiste_review}}
                 </p>
             </div>
         </div>
         {% endfor %}
     </div>
+    <div class="commentBox">
+        <form method="POST" class="commentForm">
+            {% csrf_token %}
+            <textarea rows='5' type="text" name="comment" placeholder="Write your comment about website"
+                class="inputField"></textarea>
+            <br>
+            <input type="Submit" placeholder="Submit" class="btn"><br>
+        </form>
+    </div>
+    <br>
     {% include "footer.html" %}
 </body>
+
 </html>

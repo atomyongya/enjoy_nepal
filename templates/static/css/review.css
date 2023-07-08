@@ -16,12 +16,17 @@
     padding: 1rem;
 }
 
-.userName {
-    color: #B4D330;
+.userInfo h2 {
+    color: black;
 }
 
-.userReview {
+.userInfo p {
     color: white;
+}
+
+h1 {
+    color: #22577A;
+    margin: 2em;
 }
 
 @media (width > 48rem) and (width < 75rem) {
@@ -46,7 +51,7 @@
     }
 }
 
-@media (width >=75rem) {
+@media (width > 75rem) {
     .aboutUsImage {
         width: 100%;
         display: block;
@@ -54,10 +59,13 @@
     }
 
     .userInfoContainer {
-        display: flex;
         background-color: white;
         margin-left: 20rem;
         margin-right: 20rem;
+    }
+
+    .userInfo{
+        width: 60vw;
     }
 
     .userImage {
@@ -67,5 +75,39 @@
 
     .userInfo {
         background-color: #22577A;
+    }
+
+    .commentBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputField {
+        width: 70vw;
+        margin-top: 1rem;
+        height: 4rem;
+        border-color: grey;
+        border-width: 1px;
+        border-radius: 8px;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .btn {
+        float: right;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-align: center;
+        color: white;
+        margin-top: 1rem;
+        background-color: #22577A;
+        border: none;
+        border-radius: 16px;
+        font-size: 1.2rem;
     }
 }
